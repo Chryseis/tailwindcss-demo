@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.app{
-   @apply w-1.5
+.button{
+   @apply border-8 border-black test:border-blue-500
 }
+
