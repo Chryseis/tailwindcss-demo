@@ -2,9 +2,9 @@ const plugin = require('tailwindcss/plugin')
 
 const disabledPlugin = () =>
     plugin(function ({ e, addVariant }) {
-        addVariant('test', ({ modifySelectors, separator }) => {
+        addVariant('block-hover', ({ modifySelectors, separator }) => {
             modifySelectors(({ className }) => {
-                return `.${e(`test${separator}${className}`)}:disabled`
+                return `.block:hover .${e(`block-hover${separator}${className}`)}`
             })
         })
     })

@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 .button{
-   @apply border-8 border-black test:text-3xl
+   /*@apply border-8 border-black test:text-3xl*/
 }
 
