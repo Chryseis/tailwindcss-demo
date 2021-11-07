@@ -5,8 +5,11 @@ function App() {
     const [disabled, setDisabled] = useState(false)
 
     return (
-        <div className="app">
-            <button onClick={() => setDisabled((pre) => !pre)}> click</button>
+        <div className="app dark">
+            <button className="dark:bg-black" onClick={() => setDisabled((pre) => !pre)}>
+                {' '}
+                click
+            </button>
             <button className="button" disabled={disabled}>
                 Hello
             </button>
